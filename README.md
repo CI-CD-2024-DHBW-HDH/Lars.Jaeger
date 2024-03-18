@@ -44,11 +44,16 @@ npm run dev
    * Continuous Delivery (GitHub Packages)
    * Continuous Deployment (GitHub Pages)
 4. Definiere alle nötigen Manifeste um das erstellte Image auf einem Kubernetes Cluster zu deployen **(5 Punkte)**
+> siehe .kubernetes/
 5. Erkläre in eigenen Worten:
    * Welche Vorteile ein Kubernetes Deployment gegenüber einem Kubernetes Pod hat **(2 Punkte)**
+   > Ein Deployment ermöglicht beispielsweise Skalierung und Verteilung von Pods, was gegen Performance Probleme und Ausfallsicherheit hilft.
    * Wofür ein Kubernetes Service gut ist **(2 Punkte)**
+   > Ein Service in Kubernetes definiert eine einheitliche Schnittstelle zu allen dem Service zugehörigen Pods und kann auch als Load Balancer genutzt werden. Außerdem ermöglichen Kubernetes Services Service Discovery.
    * Mehrere Wege wie man eine Kubernetes Anwendung von außen erreichen kann **(3 Punkte)**
+   > Entweder über NodePort-, Ingress- oder Load-Balancer-Ressourcen. 
 
 ## Zusatzaufgabe:
 
 Definiere einen Kubernetes Job **(2 Punkte)**
+> siehe .kubernetes/jobs
