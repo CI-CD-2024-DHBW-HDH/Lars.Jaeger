@@ -2,14 +2,13 @@ name: Deploy image
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: write
 
 env:
   NODE_VERSION: 18.14.2
-
 
 jobs:
   build-test-and-deploy:

@@ -9,8 +9,8 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "jest",
-    "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
-    "format:check": "prettier -c ./src/**/*.{js,svelte,html,ts}",
+    "format": "prettier --write --plugin prettier-plugin-svelte .",
+    "format:check": "prettier -c --plugin prettier-plugin-svelte .",
     "lint": "eslint './src/**/*.{js,ts,svelte}'",
     "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'"
   },
@@ -31,6 +31,9 @@
     "typescript": "^4.9.5",
     "typescript-eslint": "^7.2.0",
     "uuid": "^9.0.0",
-    "vite": "^4.2.0"
+    "vite": "^4.2.0",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "prettier-plugin-svelte": "^3.2.2"
   }
 }

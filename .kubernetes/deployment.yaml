@@ -27,15 +27,15 @@ spec:
         app: todo
     spec:
       containers:
-      - image: ghcr.io/ci-cd-2024-dhbw-hdh/lars.jaeger:main
-        imagePullPolicy: IfNotPresent
-        name: lars.jaeger
-        resources: {}
-        terminationMessagePath: /dev/termination-log
-        terminationMessagePolicy: File
+        - image: ghcr.io/ci-cd-2024-dhbw-hdh/lars.jaeger:main
+          imagePullPolicy: IfNotPresent
+          name: lars.jaeger
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
       dnsPolicy: ClusterFirst
       imagePullSecrets:
-      - name: regcred
+        - name: regcred
       restartPolicy: Always
       schedulerName: default-scheduler
       securityContext: {}
