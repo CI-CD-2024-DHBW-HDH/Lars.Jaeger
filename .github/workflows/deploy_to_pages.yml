@@ -2,7 +2,7 @@ name: Deploy image
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 permissions:
   contents: write
