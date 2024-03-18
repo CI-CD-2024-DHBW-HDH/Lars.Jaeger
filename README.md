@@ -44,7 +44,7 @@ npm run dev
    * Continuous Delivery (GitHub Packages)
    * Continuous Deployment (GitHub Pages)
 4. Definiere alle nötigen Manifeste um das erstellte Image auf einem Kubernetes Cluster zu deployen **(5 Punkte)**
-> siehe .kubernetes/
+> siehe `.kubernetes/`
 5. Erkläre in eigenen Worten:
    * Welche Vorteile ein Kubernetes Deployment gegenüber einem Kubernetes Pod hat **(2 Punkte)**
    > Ein Deployment ermöglicht beispielsweise Skalierung und Verteilung von Pods, was gegen Performance Probleme und Ausfallsicherheit hilft.
@@ -56,4 +56,4 @@ npm run dev
 ## Zusatzaufgabe:
 
 Definiere einen Kubernetes Job **(2 Punkte)**
-> siehe .kubernetes/jobs
+> siehe `.kubernetes/jobs`
