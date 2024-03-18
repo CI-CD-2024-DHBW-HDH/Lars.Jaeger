@@ -5,11 +5,11 @@
 ### Klone dieses Repository
 
 1. Klone das Repository
-    ```bash
-    git clone <TODO repo url>
-    cd klausur
-    git remote remove origin
-    ```
+   ```bash
+   git clone <TODO repo url>
+   cd klausur
+   git remote remove origin
+   ```
 2. Erstelle in der GitHub Organisation ein Repository mit dem Namen **\<vorname>.\<nachname>**
 3. Lade den Stand in das Repository hoch
    ```bash
@@ -32,23 +32,31 @@ npm run dev
 ## Aufgaben (20 Punkte)
 
 1. Installiere: **(3 Punkte)**
-   * ESLint
-   * Jest
-   * Prettier
-   > Die Config Dateien brauchen nicht angepasst werden
-   
+
+   - ESLint
+   - Jest
+   - Prettier
+     > Die Config Dateien brauchen nicht angepasst werden
+
    > Denke auch an die nötigen Typescript dependencies
+
 2. Schreibe ein `Dockerfile`, dass dazu benutzt werden kann, die Seite zur Verfügung zu stellen **(2 Punkte)**
 3. Schreibe GitHub Actions für: **(3 Punkte)**
-   * Continuous Integration
-   * Continuous Delivery (GitHub Packages)
-   * Continuous Deployment (GitHub Pages)
+   - Continuous Integration
+   - Continuous Delivery (GitHub Packages)
+   - Continuous Deployment (GitHub Pages)
 4. Definiere alle nötigen Manifeste um das erstellte Image auf einem Kubernetes Cluster zu deployen **(5 Punkte)**
+   > siehe `.kubernetes/`
 5. Erkläre in eigenen Worten:
-   * Welche Vorteile ein Kubernetes Deployment gegenüber einem Kubernetes Pod hat **(2 Punkte)**
-   * Wofür ein Kubernetes Service gut ist **(2 Punkte)**
-   * Mehrere Wege wie man eine Kubernetes Anwendung von außen erreichen kann **(3 Punkte)**
+   - Welche Vorteile ein Kubernetes Deployment gegenüber einem Kubernetes Pod hat **(2 Punkte)**
+     > Ein Deployment ermöglicht beispielsweise Skalierung und Verteilung von Pods, was gegen Performance Probleme und Ausfallsicherheit hilft.
+   - Wofür ein Kubernetes Service gut ist **(2 Punkte)**
+     > Ein Service in Kubernetes definiert eine einheitliche Schnittstelle zu allen dem Service zugehörigen Pods und kann auch als Load Balancer genutzt werden. Außerdem ermöglichen Kubernetes Services Service Discovery.
+   - Mehrere Wege wie man eine Kubernetes Anwendung von außen erreichen kann **(3 Punkte)**
+     > Entweder über NodePort-, Ingress- oder Load-Balancer-Ressourcen.
 
 ## Zusatzaufgabe:
 
 Definiere einen Kubernetes Job **(2 Punkte)**
+
+> siehe `.kubernetes/jobs`
